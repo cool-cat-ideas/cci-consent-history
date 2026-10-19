@@ -1,0 +1,75 @@
+{% extends '@PrestaShop/Admin/layout.html.twig' %}
+{% form_theme settingsForm '@PrestaShop/Admin/TwigTemplateForm/prestashop_ui_kit.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('/modules/cci_consent_history/views/css/admin.css') }}?v={{ adminCssVersion|url_encode }}">
+{% endblock %}
+
+{% block content %}
+  <div class="cci-consent-history-shell">
+    <main class="cci-consent-history-main">
+      {{ dashboard|raw }}
+
+      <section class="cci-consent-history-card">
+        <div class="cci-consent-history-card-inner">
+          <div class="cci-consent-history-section-title">
+            <span>{{ 'Renewed consent'|trans({}, 'Modules.CciConsentHistory.Admin') }}</span>
+          </div>
+          <p class="cci-consent-history-subtitle">
+            {{ 'When the account privacy wording changes, logged-in customers see the new text and must accept it before continuing. They can always log out instead.'|trans({}, 'Modules.CciConsentHistory.Admin') }}
+          </p>
+
+          {{ form_start(settingsForm, {attr: {class: 'cci-consent-history-form'}}) }}
+            <div class="form-wrapper">
+              {{ form_widget(settingsForm) }}
+            </div>
+            <div class="cci-consent-history-form-footer">
+              <button class="btn btn-primary" type="submit">
+                {{ 'Save'|trans({}, 'Admin.Actions') }}
+              </button>
+            </div>
+          {{ form_end(settingsForm) }}
+        </div>
+      </section>
+
+      {% include '@Modules/cci_consent_history/views/templates/admin/import_progress.html.twig' %}
+
+      <section class="cci-consent-history-grid">
+        {% include '@PrestaShop/Admin/Common/Grid/grid_panel.html.twig' with {'grid': acceptanceGrid} %}
+      </section>
+    </main>
+
+    {{ brandPanel|raw }}
+  </div>
+
+  <div class="modal fade" id="cci-consent-history-wording-modal" tabindex="-1" role="dialog" aria-labelledby="cci-consent-history-wording-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cci-consent-history-wording-modal-title">
+            {{ 'Wording snapshot'|trans({}, 'Modules.CciConsentHistory.Admin') }}
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="{{ 'Close'|trans({}, 'Admin.Actions') }}">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cci-consent-history-wording-content" data-cci-consent-history-wording-content></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+            {{ 'Close'|trans({}, 'Admin.Actions') }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script src="{{ asset('/modules/cci_consent_history/views/js/consent-history-grid.js') }}"></script>
+  <script src="{{ asset('/modules/cci_consent_history/views/js/consent-import.js') }}?v={{ adminCssVersion|url_encode }}"></script>
+  <script src="{{ asset('themes/default/js/bundle/pagination.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,29 @@
+cci_consent_history_index:
+  path: /cci-consent-history
+  methods: [GET, POST]
+  defaults:
+    _controller: 'Module\CciConsentHistory\Controller\Admin\ConsentHistoryController::indexAction'
+    _legacy_controller: 'AdminCciConsentHistory'
+    _legacy_link: 'AdminCciConsentHistory'
+
+cci_consent_history_search:
+  path: /cci-consent-history/search
+  methods: [POST]
+  defaults:
+    _controller: 'Module\CciConsentHistory\Controller\Admin\ConsentHistoryController::searchAction'
+    _legacy_controller: 'AdminCciConsentHistory'
+    _legacy_link: 'AdminCciConsentHistory:search'
+
+cci_consent_history_import_status:
+  path: /cci-consent-history/import/status
+  methods: [GET]
+  defaults:
+    _controller: 'Module\CciConsentHistory\Controller\Admin\ImportController::statusAction'
+    _legacy_controller: 'AdminCciConsentHistory'
+
+cci_consent_history_import_work:
+  path: /cci-consent-history/import/work
+  methods: [POST]
+  defaults:
+    _controller: 'Module\CciConsentHistory\Controller\Admin\ImportController::workAction'
+    _legacy_controller: 'AdminCciConsentHistory'

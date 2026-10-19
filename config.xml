@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>cci_consent_history</name>
+    <displayName><![CDATA[CCI Consent History for PrestaShop GDPR Module]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Store the exact account-consent wording, language, version and acceptance date. Ask for renewed acceptance after the wording changes.]]></description>
+    <author><![CDATA[Cool Cat Ideas]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

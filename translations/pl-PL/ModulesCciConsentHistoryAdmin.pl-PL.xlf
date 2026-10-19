@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="modules/cci_consent_history" source-language="en-US" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="cci_consent_history_admin_1"><source>CCI Consent History for PrestaShop GDPR Module</source><target>CCI Consent History for PrestaShop GDPR Module</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_2"><source>Extend PrestaShop Official GDPR Compliance with consent wording history and renewed acceptance after a change.</source><target>Rozszerz moduł Official GDPR Compliance od PrestaShop o historię treści zgód i ponowną akceptację po zmianie.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_3"><source>Settings have been saved.</source><target>Ustawienia zostały zapisane.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_4"><source>Official GDPR Compliance must be installed and enabled before consent history can be recorded.</source><target>Moduł Official GDPR Compliance musi być zainstalowany i włączony, zanim będzie można zapisywać historię zgód.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_5"><source>Enable the account creation consent and enter its wording in Official GDPR Compliance.</source><target>Włącz zgodę przy tworzeniu konta i wpisz jej treść w module Official GDPR Compliance.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_6"><source>Consent history summary</source><target>Podsumowanie historii zgód</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_7"><source>Current wording</source><target>Aktualna treść</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_8"><source>Saved versions</source><target>Zapisane wersje</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_9"><source>Acceptances</source><target>Akceptacje</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_10"><source>Customers recorded</source><target>Klienci w rejestrze</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_11"><source>Renewed consent</source><target>Ponowna akceptacja</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_12"><source>When the account privacy wording changes, logged-in customers see the new text and must accept it before continuing. They can always log out instead.</source><target>Gdy zmieni się treść dotycząca prywatności konta, zalogowany klient zobaczy nowy tekst i musi go zaakceptować przed przejściem dalej. Zamiast tego zawsze może się wylogować.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_13"><source>Require acceptance after a wording change</source><target>Wymagaj akceptacji po zmianie treści</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_14"><source>This applies to the account privacy consent configured in Official GDPR Compliance. Do not use a mandatory account consent for newsletters, analytics or advertising.</source><target>Dotyczy to zgody związanej z prywatnością konta ustawionej w Official GDPR Compliance. Nie używaj obowiązkowej zgody konta do newslettera, analityki ani reklam.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_15"><source>Acceptance history</source><target>Historia akceptacji</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_16"><source>Each row points to the exact wording, language and version accepted by the customer.</source><target>Każdy wpis wskazuje dokładną treść, język i wersję zaakceptowaną przez klienta.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_17"><source>No consent acceptance has been recorded yet.</source><target>Nie zapisano jeszcze żadnej akceptacji.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_18"><source>Customer</source><target>Klient</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_19"><source>Version</source><target>Wersja</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_20"><source>Language</source><target>Język</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_21"><source>Source</source><target>Źródło</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_22"><source>Accepted on</source><target>Data akceptacji</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_23"><source>Wording snapshot</source><target>Zapisana treść</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_24"><source>Deleted customer #%id%</source><target>Usunięty klient nr %id%</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_25"><source>Account creation</source><target>Utworzenie konta</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_26"><source>Renewed acceptance</source><target>Ponowna akceptacja</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_import"><source>Imported from X13 Privacy Manager</source><target>Import z X13 Privacy Manager</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_27"><source>Show wording</source><target>Pokaż treść</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_28"><source>Find a customer</source><target>Znajdź klienta</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_29"><source>Name or email address</source><target>Imię, nazwisko lub adres e-mail</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_30"><source>Search</source><target>Szukaj</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_31"><source>Acceptance history pages</source><target>Strony historii akceptacji</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_32"><source>Extend PrestaShop Official GDPR Compliance with wording versions, customer acceptance history and renewed acceptance after a change.</source><target>Rozszerz moduł Official GDPR Compliance od PrestaShop o wersje treści, historię akceptacji klientów i ponowną akceptację po zmianie.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_34"><source>This module is only a fraction of what we do. We deliver custom IT solutions that grow with your business. We ensure complete code optimization and security.</source><target>Ten moduł to tylko ułamek tego, co robimy. Tworzymy rozwiązania IT, które można rozwijać razem z Twoją firmą. Dbamy o szybkość i bezpieczeństwo kodu.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_35"><source>We implement and develop:</source><target>Wdrażamy i rozwijamy:</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_36"><source>Fast e-commerce on %platform% (from implementations to custom modules)</source><target>Szybki e-commerce na %platform% (od wdrożeń po własne wtyczki)</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_37"><source>Flexible and modern %platform% websites</source><target>Elastyczne i nowoczesne strony %platform%</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_38"><source>Scalable web applications in %platform%</source><target>Skalowalne aplikacje webowe w %platform%</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_39"><source>Process automation and %platform%</source><target>Automatyzację procesów i %platform%</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_40"><source>API integrations</source><target>Integracje API</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_42"><source>See our offer</source><target>Zobacz naszą ofertę</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_brand_about_us"><source>About us</source><target>O nas</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_title"><source>Optional integration: import existing account consents</source><target>Opcjonalna integracja: import zgód z X13</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_missing"><source>This optional integration needs the old X13 source tables in the same database. Their absence does not affect normal consent history or renewed acceptance.</source><target>Ta opcjonalna integracja wymaga starych tabel źródłowych X13 w tej samej bazie. Ich brak nie wpływa na zwykłą historię zgód ani ponowną akceptację.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_definitions"><source>Consent definitions</source><target>Treści zgód</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_history"><source>History records</source><target>Wpisy historii</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_accepted"><source>Accepted records</source><target>Akceptacje</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_existing"><source>Already imported</source><target>Już przeniesione</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_wording"><source>Use the active X13 wording on the account creation form</source><target>Użyj aktywnej treści X13 w formularzu zakładania konta</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_scope"><source>This updates only the account GDPR consent managed by Official GDPR Compliance. Newsletter, analytics and advertising consents are not imported.</source><target>Zmiana dotyczy tylko zgody RODO konta obsługiwanej przez Official GDPR Compliance. Zgody na newsletter, analitykę i reklamy nie są importowane.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_backup"><source>I have a current database backup</source><target>Mam aktualną kopię bazy danych</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_safe"><source>The import keeps the X13 source tables and does not delete existing consent history.</source><target>Import pozostawia tabele źródłowe X13 i nie usuwa istniejącej historii zgód.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_button"><source>Import X13 consent history</source><target>Importuj historię zgód X13</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_confirm"><source>Confirm that you have a current database backup before starting the import.</source><target>Przed rozpoczęciem importu potwierdź, że masz aktualną kopię bazy danych.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_x13_done"><source>X13 import finished: %added% acceptances added, %skipped% already present and skipped.</source><target>Import X13 zakończony: dodano %added% akceptacji, a %skipped% już istniało i zostało pominiętych.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_description_current"><source>Store the exact account-consent wording, language, version and acceptance date. Ask for renewed acceptance after the wording changes.</source><target>Zapisuj dokładną treść zgody konta, jej język, wersję i datę akceptacji. Po zmianie treści poproś o ponowną akceptację.</target></trans-unit>
+      <trans-unit id="cci_consent_history_admin_hero_current"><source>Keep wording versions and customer acceptance history for Official GDPR Compliance. Ask customers to accept the new wording after a change.</source><target>Zapisuj wersje treści i historię akceptacji klientów z Official GDPR Compliance. Po zmianie treści poproś klientów o ponowną akceptację.</target></trans-unit>
+      <trans-unit id="cci_consent_history_import_retained"><source>%count% previously imported acceptances remain in the history. The old source tables are absent, so only this optional import is unavailable. Normal recording and renewed acceptance continue to work; you do not need to import these records again.</source><target>W historii pozostaje %count% wcześniej zaimportowanych akceptacji. Brak starych tabel źródłowych wyłącza tylko ten opcjonalny import. Zapis nowych zgód i ponowna akceptacja nadal działają; nie trzeba ponawiać importu tych wpisów.</target></trans-unit>
+      <trans-unit id="cci_import_90604e487bab30d70b18e9f64d808917"><source>Import progress</source><target>Postęp importu</target></trans-unit>
+      <trans-unit id="cci_import_b7d808b84e6bb23bc7fc744b379eb838"><source>Records are saved in small batches. You can pause and return later. Closing this page stops browser processing after the current batch; a CLI or cron worker can continue without an open browser.</source><target>Wpisy zapisują się partiami. Możesz wstrzymać import i wrócić później. Po zamknięciu strony przeglądarka skończy bieżącą partię i zatrzyma pracę. Polecenie CLI lub zadanie cron może kontynuować bez otwartej przeglądarki.</target></trans-unit>
+      <trans-unit id="cci_import_b076047044cd8073f35851150009e8bb"><source>Source integration</source><target>Integracja źródłowa</target></trans-unit>
+      <trans-unit id="cci_import_0eef10d7ade4c835c25f4c01b157715b"><source>Use the source account-consent wording after the import finishes</source><target>Po zakończeniu importu użyj treści zgody konta ze źródła</target></trans-unit>
+      <trans-unit id="cci_import_aaabfd317d76a7cf42f993faa1970aa0"><source>Start import</source><target>Rozpocznij import</target></trans-unit>
+      <trans-unit id="cci_import_abc4a0afc1fd7ae7e2c9dfbd10ec7e58"><source>Enable JavaScript to process batches here, or use the CLI command described in the documentation.</source><target>Włącz JavaScript, aby importować partie w tym panelu, lub użyj polecenia CLI opisanego w dokumentacji.</target></trans-unit>
+      <trans-unit id="cci_import_f29ddbfb905eb2593fdcdfb243f9af85"><source>Added</source><target>Dodane</target></trans-unit>
+      <trans-unit id="cci_import_3ef1b08cd7ba7d163725d45fd2cc309c"><source>Already present</source><target>Już istniejące</target></trans-unit>
+      <trans-unit id="cci_import_35a92cc03845fe414bd227c88995b679"><source>Refusals archived</source><target>Zarchiwizowane odmowy</target></trans-unit>
+      <trans-unit id="cci_import_7261c0a16c80bfbbe39d53a8adb19bb8"><source>Added without a matched customer</source><target>Dodane bez dopasowanego klienta</target></trans-unit>
+      <trans-unit id="cci_import_bcd9720df32b56284ba6e227ac4fd6fa"><source>Records with errors</source><target>Wpisy z błędami</target></trans-unit>
+      <trans-unit id="cci_import_105b296a83f9c105355403f3332af50f"><source>Pause</source><target>Wstrzymaj</target></trans-unit>
+      <trans-unit id="cci_import_fae656ca0c324686f0b40613f6abb69e"><source>Resume from saved progress</source><target>Wznów od zapisanego miejsca</target></trans-unit>
+      <trans-unit id="cci_import_b4a5d9830b49461f8411812d988a78c0"><source>End this import</source><target>Zakończ ten import</target></trans-unit>
+      <trans-unit id="cci_import_b867afc09c1f9c670e1e16fe548d6e50"><source>Refresh the acceptance history</source><target>Odśwież historię akceptacji</target></trans-unit>
+      <trans-unit id="cci_import_03ba00b45ce0e11d37cfc6ef9978c908"><source>Ending an import keeps the batches already saved. It does not restore the database backup or delete imported records.</source><target>Zakończenie importu pozostawia zapisane partie. Nie przywraca kopii bazy i nie usuwa przeniesionych wpisów.</target></trans-unit>
+      <trans-unit id="cci_import_06ed7c2eab971fe240d4d68db3bbe8de"><source>Reconnect and check saved progress</source><target>Połącz ponownie i sprawdź zapisany postęp</target></trans-unit>
+      <trans-unit id="cci_import_7b2f31b90fe1c2cc33a52233c1925df3"><source>Queued</source><target>W kolejce</target></trans-unit>
+      <trans-unit id="cci_import_cd804333d16ac675a7605cf03f787ec6"><source>Importing</source><target>Trwa import</target></trans-unit>
+      <trans-unit id="cci_import_e99180abf47a8b3a856e0bcb2656990a"><source>Paused</source><target>Wstrzymany</target></trans-unit>
+      <trans-unit id="cci_import_46103c0466bcd345f730f4caab8c6d90"><source>Stopped after an error</source><target>Zatrzymany po błędzie</target></trans-unit>
+      <trans-unit id="cci_import_07ca5050e697392c9ed47e6453f1453f"><source>Completed</source><target>Zakończony</target></trans-unit>
+      <trans-unit id="cci_import_0157fbb99be9622bdaa6e544270c0622"><source>Ended</source><target>Przerwany</target></trans-unit>
+      <trans-unit id="cci_import_a221a61daf03704b7dd00c6d50d6b106"><source>The connection was interrupted. Check saved progress before continuing. Do not start another import.</source><target>Połączenie zostało przerwane. Sprawdź zapisany postęp przed kontynuowaniem. Nie uruchamiaj nowego importu.</target></trans-unit>
+      <trans-unit id="cci_import_eb2a2fadea76d3e332d33bc3833743aa"><source>The current batch was rolled back. Earlier batches remain saved. Check the source and database, then resume. Error code:</source><target>Bieżąca partia została cofnięta. Wcześniejsze partie są zapisane. Sprawdź źródło i bazę, a następnie wznów import. Kod błędu:</target></trans-unit>
+      <trans-unit id="cci_import_cc514a0173025c2323b843e3b71c3dea"><source>Your session or security token has expired. Reload this page and sign in again if needed.</source><target>Sesja lub token zabezpieczający wygasły. Odśwież stronę i w razie potrzeby zaloguj się ponownie.</target></trans-unit>
+      <trans-unit id="cci_import_0b71ec5b870eb67ed4351867bbf25f87"><source>The source is unavailable or has no supported account-consent definitions. Check the integration and select one shop.</source><target>Źródło jest niedostępne lub nie zawiera obsługiwanych treści zgody konta. Sprawdź integrację i wybierz jeden sklep.</target></trans-unit>
+      <trans-unit id="cci_import_28de3f70ea8b17e1a9daa0b68747ed43"><source>Another worker is saving a batch. Wait a moment and check saved progress.</source><target>Inny proces zapisuje partię. Poczekaj chwilę i sprawdź zapisany postęp.</target></trans-unit>
+      <trans-unit id="cci_import_2986336a79d73f0699e9c8e89048c92d"><source>You do not have permission to update this module. Ask the shop administrator for access.</source><target>Nie masz uprawnień do zmiany ustawień tego modułu. Poproś administratora sklepu o dostęp.</target></trans-unit>
+      <trans-unit id="cci_import_e6f641ae8ac72385a9556588b0cac77c"><source>Processed</source><target>Przetworzono</target></trans-unit>
+      <trans-unit id="cci_import_6e5acd48f989cdd9c1730205890869a1"><source>Moving consents from another module?</source><target>Przenosisz zgody z innego modułu?</target></trans-unit>
+      <trans-unit id="cci_import_9920d387d882f4c4edf5b00a296b5a54"><source>Cool Cat Ideas can help import consent history, match customer records and build an integration for the consent module used in your shop. Tell us which module and PrestaShop version you use.</source><target>Cool Cat Ideas pomoże przenieść historię zgód, dopasować klientów i przygotować integrację z modułem zgód używanym w Twoim sklepie. Napisz, z jakiego modułu i wersji PrestaShop korzystasz.</target></trans-unit>
+      <trans-unit id="cci_import_e7ae3004199343bf00d3a8cb341500cc"><source>Ask about an import or integration</source><target>Zapytaj o import lub integrację</target></trans-unit>
+      <trans-unit id="cci_import_ca5d778346a56a5daebaaf8b79cfd135"><source>Import queued. Open the import progress to continue.</source><target>Import czeka w kolejce. Otwórz postęp importu, aby kontynuować.</target></trans-unit>
+      <trans-unit id="cci_import_453e6aa38d87b28ccae545967c53004f"><source>Unavailable</source><target>Niedostępna</target></trans-unit>
+      <trans-unit id="cci_import_890637883a25f024ae53184b7f775122"><source>Before starting the import</source><target>Przed rozpoczęciem importu</target></trans-unit>
+      <trans-unit id="cci_import_e8173e6a885a39239d9fe41713b83c80"><source>Import guide</source><target>Instrukcja importu</target></trans-unit>
+      <trans-unit id="cci_import_6bc6ac8fe9b038b2b51fdf40a458e104"><source>Product resources</source><target>Dokumentacja i produkt</target></trans-unit>
+      <trans-unit id="cci_import_5b6cf869265c13af8566f192b4ab3d2a"><source>Documentation</source><target>Dokumentacja</target></trans-unit>
+      <trans-unit id="cci_import_eb763a2e313718f33f55e1f0d84df6ee"><source>Product page</source><target>Strona produktu</target></trans-unit>
+      <trans-unit id="cci_import_f1fefa32c7668e4a685bdff07585ae69"><source>This source is unavailable. Check its source tables and reload this page, or select another integration.</source><target>To źródło jest niedostępne. Sprawdź jego tabele i odśwież stronę lub wybierz inną integrację.</target></trans-unit>
+      <trans-unit id="cci_import_3c913c3c0d3a6087a5f5f8cf5bab4b70"><source>The source tables exist, but no supported account-consent wording was found for this shop. Check the source and reload this page.</source><target>Tabele źródłowe istnieją, ale nie znaleziono obsługiwanej treści zgody konta dla tego sklepu. Sprawdź źródło i odśwież stronę.</target></trans-unit>
+      <trans-unit id="cci_import_a7e61fe3fe63b95a85b8b3777df68277"><source>Select one shop before starting an import.</source><target>Przed rozpoczęciem importu wybierz jeden sklep.</target></trans-unit>
+      <trans-unit id="cci_import_9e0915ec09860a0e38c44c16d8784a30"><source>Optional migration from GDPR - regulacje ochrony danych RODO by X13, a Polish PrestaShop module vendor. Copy supported account-consent wording and acceptance history. Other shops do not need this integration.</source><target>Opcjonalny import z modułu GDPR - regulacje ochrony danych RODO firmy X13. Przenieś obsługiwane treści zgody konta i historię akceptacji. Pozostałe sklepy nie potrzebują tej integracji.</target></trans-unit>
+      <trans-unit id="cci_import_e3baa3704e2396a3ef17f91bbc3a160a"><source>Import earlier consents</source><target>Import wcześniejszych zgód</target></trans-unit>
+      <trans-unit id="cci_import_5cdb3f26080b52ea364d835520b323fb"><source>Choose a source to import earlier account consents. Records are saved in batches, so you can pause and resume.</source><target>Wybierz źródło wcześniejszych zgód dotyczących konta. Wpisy zapisujemy partiami, więc możesz wstrzymać import i go wznowić.</target></trans-unit>
+      <trans-unit id="cci_import_531b20d78fdc03771525942f2b66deff"><source>Import account-consent records from the selected module.</source><target>Import zapisów zgód dotyczących konta z wybranego modułu.</target></trans-unit>
+      <trans-unit id="cci_import_3b68c90435e1cd87bb4e6264ccb31465"><source>Import account-consent wording and acceptance records. The old source tables must be in this database, with the original customer IDs.</source><target>Import treści zgód dotyczących konta i zapisów ich akceptacji. Stare tabele źródłowe muszą być w tej bazie, z zachowanymi identyfikatorami klientów.</target></trans-unit>
+      <trans-unit id="cci_import_53d50c4eb589ded49c24ee38ef6d4255"><source>The X13 source tables are missing. Import from this source is unavailable. Existing consent history remains available.</source><target>Brakuje tabel źródłowych X13. Import z tego źródła jest niedostępny. Dotychczasowa historia zgód pozostaje dostępna.</target></trans-unit>
+      <trans-unit id="cci_import_494fb66dfd68f4f52b768c15f407bace"><source>Closing this page stops browser processing after the current batch. A CLI or cron worker can continue without an open browser.</source><target>Zamknięcie strony zatrzymuje przetwarzanie w przeglądarce po bieżącej partii. Polecenie CLI lub zadanie cron może kontynuować bez otwartej przeglądarki.</target></trans-unit>
+      <trans-unit id="cci_consent_history_gdpr_settings"><source>Official GDPR Compliance settings</source><target>Ustawienia Official GDPR Compliance</target></trans-unit>
+      <trans-unit id="cci_profile_update"><source>Profile update</source><target>Aktualizacja profilu</target></trans-unit>
+      <trans-unit id="cci_gdpr_form"><source>GDPR form submission</source><target>Wysłanie formularza ze zgodą GDPR</target></trans-unit>
+      <trans-unit id="cci_gdpr_guest"><source>Guest #%id%</source><target>Gość #%id%</target></trans-unit>
+      <trans-unit id="cci_gdpr_guest_without_id"><source>Guest</source><target>Gość</target></trans-unit>
+      <trans-unit id="cci_customer_choice_1"><source>Status</source><target>Stan</target></trans-unit>
+      <trans-unit id="cci_customer_choice_2"><source>Recorded on</source><target>Data zapisu</target></trans-unit>
+      <trans-unit id="cci_customer_choice_3"><source>Granted</source><target>Udzielona</target></trans-unit>
+      <trans-unit id="cci_customer_choice_4"><source>Withdrawn</source><target>Wycofana</target></trans-unit>
+      <trans-unit id="cci_customer_choice_5"><source>Accepted</source><target>Zaakceptowana</target></trans-unit>
+      <trans-unit id="cci_customer_choice_6"><source>Newsletter subscription</source><target>Zgoda na newsletter</target></trans-unit>
+      <trans-unit id="cci_customer_choice_7"><source>Offers from partners</source><target>Zgoda na oferty partnerów</target></trans-unit>
+      <trans-unit id="cci_customer_choice_8"><source>Customer data privacy</source><target>Informacja o prywatności danych klienta</target></trans-unit>
+      <trans-unit id="cci_customer_choice_9"><source>Newsletter enabled</source><target>Włączenie newslettera</target></trans-unit>
+      <trans-unit id="cci_customer_choice_10"><source>Newsletter disabled</source><target>Wyłączenie newslettera</target></trans-unit>
+      <trans-unit id="cci_customer_choice_11"><source>Partner offers enabled</source><target>Włączenie ofert partnerów</target></trans-unit>
+      <trans-unit id="cci_customer_choice_12"><source>Partner offers disabled</source><target>Wyłączenie ofert partnerów</target></trans-unit>
+      <trans-unit id="cci_customer_choice_13"><source>Recorded events</source><target>Zapisane zdarzenia</target></trans-unit>
+      <trans-unit id="cci_customer_choice_14"><source>Consent history</source><target>Historia zgód</target></trans-unit>
+      <trans-unit id="261addf78c7b2c961032b3dd08ba0b1f">
+        <source>Purpose</source>
+        <target>Cel</target>
+      </trans-unit>
+      <trans-unit id="20fedb40fc7665e4cbbb6d886f18108c">
+        <source>Customer form</source>
+        <target>Formularz klienta</target>
+      </trans-unit>
+      <trans-unit id="21d668bf99665550b8c39d8de120e785">
+        <source>Consent granted</source>
+        <target>Zgoda udzielona</target>
+      </trans-unit>
+      <trans-unit id="fe667c917937c7ec7c83cde587a975ed">
+        <source>Consent withdrawn</source>
+        <target>Zgoda wycofana</target>
+      </trans-unit>
+      <trans-unit id="9713618ad69766cd82cb4b485769db52">
+        <source>Information accepted</source>
+        <target>Informacja zaakceptowana</target>
+      </trans-unit>
+      <trans-unit id="5dd8069acd261afe2e6b245fd98b9d09"><source>Customer data privacy block settings</source><target>Ustawienia Customer data privacy block</target></trans-unit>
+    </body>
+  </file>
+</xliff>

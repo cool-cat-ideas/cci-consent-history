@@ -1,0 +1,21 @@
+{
+  "name": "coolcatideas/cci-consent-history",
+  "description": "Consent wording history for PrestaShop Official GDPR Compliance",
+  "license": "AFL-3.0",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Module\\CciConsentHistory\\": "src/"
+    }
+  },
+  "config": {
+    "prepend-autoloader": false
+  },
+  "type": "prestashop-module",
+  "scripts": {
+    "format:php": "php scripts/quality/vendor/bin/php-cs-fixer fix --config=scripts/quality/php-cs-fixer.php",
+    "format:php:check": "@format:php --dry-run --diff"
+  }
+}

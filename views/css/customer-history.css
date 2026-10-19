@@ -1,0 +1,61 @@
+.cci-customer-history-entry {
+  margin-top: 16px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.cci-customer-history-meta {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 2fr;
+  gap: 16px;
+  margin: 0 0 16px;
+}
+
+.cci-customer-history-meta > div {
+  min-width: 0;
+}
+
+.cci-customer-history-meta dt {
+  margin-bottom: 4px;
+}
+
+.cci-customer-history-meta dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.cci-customer-history-wording summary {
+  padding: 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cci-customer-history-wording summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.cci-customer-history-wording > div {
+  padding-top: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.cci-customer-history-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .cci-customer-history-entry {
+    padding: 16px;
+  }
+
+  .cci-customer-history-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+}

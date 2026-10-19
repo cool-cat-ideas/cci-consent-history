@@ -1,0 +1,16 @@
+{
+  "name": "cci-consent-history",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "node scripts/quality/format.mjs",
+    "format:check": "node scripts/quality/format.mjs --check",
+    "build": "node scripts/build-release.mjs",
+    "package:presta": "node scripts/build-release.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "prettier": "3.9.10"
+  },
+  "version": "1.0.0"
+}

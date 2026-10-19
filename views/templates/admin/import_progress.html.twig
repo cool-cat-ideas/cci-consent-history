@@ -1,0 +1,111 @@
+<section class="cci-consent-history-card" data-cci-import
+  data-status-url="{{ path('cci_consent_history_import_status') }}"
+  data-work-url="{{ path('cci_consent_history_import_work') }}"
+  data-can-update="{{ importCanUpdate ? '1' : '0' }}"
+  data-token="{{ csrf_token('cci_consent_import') }}">
+  <div class="cci-consent-history-card-inner">
+    <h2 class="cci-consent-history-section-title">{{ 'Import earlier consents'|trans({}, 'Modules.CciConsentHistory.Admin') }}</h2>
+    <p class="cci-consent-history-subtitle">{{ 'Choose a source to import earlier account consents. Records are saved in batches, so you can pause and resume.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p>
+    {% if not importCanUpdate %}
+      <p class="alert alert-info">{{ 'You do not have permission to update this module. Ask the shop administrator for access.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p>
+    {% endif %}
+    <form method="post" class="cci-consent-history-form" data-import-start>
+      <div class="form-group">
+        <label for="cci-import-source">{{ 'Source integration'|trans({}, 'Modules.CciConsentHistory.Admin') }}</label>
+        <select class="form-control" id="cci-import-source" name="importer">
+          {% for id, source in importSources %}
+            {% set sourceDescription = source.description|default('Import account-consent records from the selected module.')|trans({}, 'Modules.CciConsentHistory.Admin') %}
+            <option value="{{ id }}"
+              data-available="{{ source.available ? '1' : '0' }}"
+              data-reason="{{ source.reason }}"
+              data-description="{{ sourceDescription }}"
+              data-notice="{{ source.notice|default('')|trans({}, 'Modules.CciConsentHistory.Admin') }}">
+              {{ source.label }}{% if not source.available %} ({{ 'Unavailable'|trans({}, 'Modules.CciConsentHistory.Admin') }}){% endif %}
+            </option>
+          {% endfor %}
+        </select>
+        <p class="cci-import-source-description" data-import-source-description hidden></p>
+        <p class="alert alert-info cci-import-source-notice" data-import-source-notice role="status" aria-live="polite" hidden></p>
+      </div>
+      <fieldset class="cci-import-confirmations" disabled>
+        <legend class="sr-only">{{ 'Before starting the import'|trans({}, 'Modules.CciConsentHistory.Admin') }}</legend>
+        <label class="cci-consent-history-check">
+          <input type="checkbox" name="wording" value="1">
+          <span>{{ 'Use the source account-consent wording after the import finishes'|trans({}, 'Modules.CciConsentHistory.Admin') }}</span>
+        </label>
+        <label class="cci-consent-history-check">
+          <input type="checkbox" name="backup" value="1" required>
+          <span>{{ 'I have a current database backup'|trans({}, 'Modules.CciConsentHistory.Admin') }}</span>
+        </label>
+      </fieldset>
+      <div class="cci-import-actions">
+        <button class="btn btn-primary cci-btn-primary" type="submit" disabled>
+          <i class="material-icons" aria-hidden="true">file_download</i>
+          {{ 'Start import'|trans({}, 'Modules.CciConsentHistory.Admin') }}
+        </button>
+        <a class="btn btn-outline-secondary" href="https://coolcatideas.com/docs/cci-consent-history/1.0.0/import-consents/" target="_blank" rel="noopener noreferrer">
+          {{ 'Import guide'|trans({}, 'Modules.CciConsentHistory.Admin') }}
+          <i class="material-icons" aria-hidden="true">open_in_new</i>
+        </a>
+      </div>
+      <noscript><p class="alert alert-info">{{ 'Enable JavaScript to process batches here, or use the CLI command described in the documentation.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p></noscript>
+    </form>
+    <div data-import-progress hidden>
+      <p><strong data-import-source></strong> · <span data-import-state></span></p>
+      <progress class="cci-import-progress" max="100" value="0" aria-label="{{ 'Import progress'|trans({}, 'Modules.CciConsentHistory.Admin') }}"></progress>
+      <p data-import-live role="status" aria-live="polite" aria-atomic="true"></p>
+      <dl class="cci-import-counts">
+        {% for key, label in {'added': 'Added', 'skipped': 'Already present', 'rejected': 'Refusals archived', 'unmatched': 'Added without a matched customer', 'errors': 'Records with errors'} %}
+          <div>
+            <dt>{{ label|trans({}, 'Modules.CciConsentHistory.Admin') }}</dt>
+            <dd data-count="{{ key }}">0</dd>
+          </div>
+        {% endfor %}
+      </dl>
+      <p data-import-message class="alert alert-warning" hidden></p>
+      <div class="cci-import-actions">
+        <button class="btn btn-outline-secondary" type="button" data-action="pause" hidden>{{ 'Pause'|trans({}, 'Modules.CciConsentHistory.Admin') }}</button>
+        <button class="btn btn-primary cci-btn-primary" type="button" data-action="resume" hidden>{{ 'Resume from saved progress'|trans({}, 'Modules.CciConsentHistory.Admin') }}</button>
+        <button class="btn btn-outline-secondary" type="button" data-action="cancel" hidden>{{ 'End this import'|trans({}, 'Modules.CciConsentHistory.Admin') }}</button>
+        <a href="{{ path('cci_consent_history_index') }}" data-import-history hidden>{{ 'Refresh the acceptance history'|trans({}, 'Modules.CciConsentHistory.Admin') }}</a>
+      </div>
+      <div class="alert alert-info cci-import-guidance">
+        <p>{{ 'Closing this page stops browser processing after the current batch. A CLI or cron worker can continue without an open browser.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p>
+        <p>{{ 'Ending an import keeps the batches already saved. It does not restore the database backup or delete imported records.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p>
+      </div>
+    </div>
+    <p data-import-error class="alert alert-danger" role="alert" hidden></p>
+    <button class="btn btn-outline-secondary" type="button" data-import-reconnect hidden>{{ 'Reconnect and check saved progress'|trans({}, 'Modules.CciConsentHistory.Admin') }}</button>
+    <div hidden data-import-labels
+      data-queued="{{ 'Queued'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-running="{{ 'Importing'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-paused="{{ 'Paused'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-failed="{{ 'Stopped after an error'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-completed="{{ 'Completed'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-cancelled="{{ 'Ended'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-network="{{ 'The connection was interrupted. Check saved progress before continuing. Do not start another import.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-failure="{{ 'The current batch was rolled back. Earlier batches remain saved. Check the source and database, then resume. Error code:'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-csrf="{{ 'Your session or security token has expired. Reload this page and sign in again if needed.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-source="{{ 'The source is unavailable or has no supported account-consent definitions. Check the integration and select one shop.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-unavailable="{{ 'This source is unavailable. Check its source tables and reload this page, or select another integration.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-definitions="{{ 'The source tables exist, but no supported account-consent wording was found for this shop. Check the source and reload this page.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-shop="{{ 'Select one shop before starting an import.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-backup="{{ 'Confirm that you have a current database backup before starting the import.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-busy="{{ 'Another worker is saving a batch. Wait a moment and check saved progress.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-permission="{{ 'You do not have permission to update this module. Ask the shop administrator for access.'|trans({}, 'Modules.CciConsentHistory.Admin') }}"
+      data-processed="{{ 'Processed'|trans({}, 'Modules.CciConsentHistory.Admin') }}"></div>
+  </div>
+</section>
+
+<section class="cci-consent-history-card cci-import-service">
+  <div class="cci-consent-history-card-inner">
+    <div class="cci-import-service-copy">
+      <h2 class="cci-consent-history-section-title">{{ 'Moving consents from another module?'|trans({}, 'Modules.CciConsentHistory.Admin') }}</h2>
+      <p>{{ 'Cool Cat Ideas can help import consent history, match customer records and build an integration for the consent module used in your shop. Tell us which module and PrestaShop version you use.'|trans({}, 'Modules.CciConsentHistory.Admin') }}</p>
+      <a class="btn cci-btn-primary" href="https://coolcatideas.com/contact/" target="_blank" rel="noopener noreferrer">
+        {{ 'Ask about an import or integration'|trans({}, 'Modules.CciConsentHistory.Admin') }}
+        <i class="material-icons" aria-hidden="true">arrow_forward</i>
+      </a>
+    </div>
+  </div>
+</section>

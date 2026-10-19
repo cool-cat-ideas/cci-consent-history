@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="modules/cci_consent_history" source-language="en-US" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="cci_consent_history_shop_1"><source>We could not save your acceptance. Check the box and try again.</source><target>Nie udało się zapisać akceptacji. Zaznacz pole i spróbuj ponownie.</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_2"><source>Please review the updated privacy information</source><target>Zapoznaj się ze zaktualizowaną informacją o prywatności</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_3"><source>The account privacy wording has changed since your previous visit. Read the new version before continuing.</source><target>Treść dotycząca prywatności konta zmieniła się od Twojej ostatniej wizyty. Przeczytaj nową wersję przed przejściem dalej.</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_4"><source>I have read and accept the updated account privacy information.</source><target>Zapoznałem się ze zaktualizowaną informacją o prywatności konta i ją akceptuję.</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_5"><source>Log out</source><target>Wyloguj się</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_6"><source>Accept and continue</source><target>Akceptuję i przechodzę dalej</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_7"><source>Consent history</source><target>Historia zgód</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_8"><source>Account creation</source><target>Założenie konta</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_9"><source>Renewed acceptance</source><target>Ponowna akceptacja</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_10"><source>Imported acceptance</source><target>Akceptacja przeniesiona z wcześniejszego modułu</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_11"><source>Accepted on</source><target>Data akceptacji</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_12"><source>Version</source><target>Wersja</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_13"><source>Language</source><target>Język</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_14"><source>Source</source><target>Źródło</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_15"><source>Accepted wording</source><target>Zaakceptowana treść</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_16"><source>This page shows recorded privacy acceptances from your account and supported forms. Each entry keeps the purpose, wording and date saved at the time.</source><target>Tu znajdziesz zapisane akceptacje informacji o prywatności z Twojego konta i obsługiwanych formularzy. Każdy wpis zawiera cel, treść i datę zapisaną w chwili akceptacji.</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_17"><source>Download my personal data</source><target>Pobierz moje dane osobowe</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_18"><source>Saved acceptances: %count%</source><target>Zapisane akceptacje: %count%</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_19"><source>Read accepted wording</source><target>Pokaż zaakceptowaną treść</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_20"><source>Consent history pages</source><target>Strony historii zgód</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_21"><source>Previous</source><target>Poprzednia</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_22"><source>Next</source><target>Następna</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_23"><source>Page %page% of %pages%</source><target>Strona %page% z %pages%</target></trans-unit>
+      <trans-unit id="cci_consent_history_shop_24"><source>No consent acceptances have been recorded for your account in this shop.</source><target>Na Twoim koncie w tym sklepie nie ma jeszcze zapisanych akceptacji.</target></trans-unit>
+      <trans-unit id="cci_profile_update"><source>Profile update</source><target>Aktualizacja profilu</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_1"><source>GDPR form submission</source><target>Wysłanie formularza ze zgodą GDPR</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_2"><source>Purpose</source><target>Cel</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_3"><source>Account privacy information</source><target>Prywatność konta</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_4"><source>Profile privacy information</source><target>Prywatność danych profilu</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_5"><source>Newsletter form privacy information</source><target>Prywatność danych w formularzu newslettera</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_6"><source>Stock alert privacy information</source><target>Prywatność danych w powiadomieniach o dostępności</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_7"><source>Contact form privacy information</source><target>Prywatność danych w formularzu kontaktowym</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_8"><source>Blog comment privacy information</source><target>Prywatność danych w komentarzach na blogu</target></trans-unit>
+      <trans-unit id="cci_gdpr_source_9"><source>Form privacy information</source><target>Prywatność danych w formularzu</target></trans-unit>
+      <trans-unit id="cci_customer_choice_1"><source>Status</source><target>Stan</target></trans-unit>
+      <trans-unit id="cci_customer_choice_2"><source>Recorded on</source><target>Data zapisu</target></trans-unit>
+      <trans-unit id="cci_customer_choice_3"><source>Saved wording</source><target>Zapisana treść</target></trans-unit>
+      <trans-unit id="cci_customer_choice_4"><source>Read saved wording</source><target>Pokaż zapisaną treść</target></trans-unit>
+      <trans-unit id="cci_customer_choice_5"><source>Saved events: %count%</source><target>Zapisane zdarzenia: %count%</target></trans-unit>
+      <trans-unit id="cci_customer_choice_6"><source>Granted</source><target>Udzielona</target></trans-unit>
+      <trans-unit id="cci_customer_choice_7"><source>Withdrawn</source><target>Wycofana</target></trans-unit>
+      <trans-unit id="cci_customer_choice_8"><source>Accepted</source><target>Zaakceptowana</target></trans-unit>
+      <trans-unit id="cci_customer_choice_9"><source>Newsletter subscription</source><target>Zgoda na newsletter</target></trans-unit>
+      <trans-unit id="cci_customer_choice_10"><source>Offers from partners</source><target>Zgoda na oferty partnerów</target></trans-unit>
+      <trans-unit id="cci_customer_choice_11"><source>Customer data privacy</source><target>Informacja o prywatności danych klienta</target></trans-unit>
+      <trans-unit id="cci_customer_choice_12"><source>Review your recorded privacy acceptances and consent choices. Each entry keeps the purpose, status, wording and date saved at the time.</source><target>Sprawdź zapisane akceptacje informacji o prywatności oraz swoje zgody. Każdy wpis zawiera cel, stan, treść i datę zapisu.</target></trans-unit>
+      <trans-unit id="cci_customer_choice_13"><source>No consent events have been recorded for your account in this shop.</source><target>Na Twoim koncie w tym sklepie nie ma jeszcze zapisanych zdarzeń dotyczących zgód.</target></trans-unit>
+    </body>
+  </file>
+</xliff>

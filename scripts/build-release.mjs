@@ -29,7 +29,7 @@ const archive = join(output, `${slug}-${version}.zip`);
 const forbidden = [
   /^(?:scripts|docs|tests?|output|release|releases|dist|internal|node_modules|\.wordpress-org)(?:\/|$)/,
   /^(?:src\/admin-v2|src\/front|assets\/scss)(?:\/|$)/,
-  /(?:^|\/)(?:\.[^/]+|node_modules|__pycache__|test-results|coverage)(?:\/|$)/,
+  /(?:^|\/)(?:\.(?!htaccess(?:\/|$))[^/]+|node_modules|__pycache__|test-results|coverage)(?:\/|$)/,
   /^(?:AGENTS|PROJECT_GUIDE|README|CONTRIBUTING|MARKETPLACE-CHECKLIST)\.(?:md|markdown|rst)$/i,
   /^(?:package(?:-lock)?\.json|composer\.lock|pnpm-lock\.yaml|yarn\.lock)$/,
   /^(?:(?:webpack|tailwind|postcss|eslint|vite|vitest|playwright|jest)\.config\.|tsconfig|tmp-)/,
@@ -50,6 +50,8 @@ const files = execFileSync(
       file && existsSync(join(root, file)) && !forbidden.some((pattern) => pattern.test(file)),
   );
 
+if (!files.includes('vendor/.htaccess'))
+  throw new Error('Missing vendor/.htaccess access protection.');
 if (relative(output, stage) !== `.stage-${slug}`) throw new Error('Invalid staging directory.');
 mkdirSync(output, { recursive: true });
 rmSync(stage, { recursive: true, force: true });

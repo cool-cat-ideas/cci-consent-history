@@ -2,9 +2,9 @@
 
 # CCI Consent History for PrestaShop GDPR Module
 
-Store the exact privacy wording, language, version and acceptance time alongside PrestaShop's Official GDPR Compliance module (`psgdpr`). When the wording changes, the module keeps the earlier record and asks the customer to accept the new version.
+Check which privacy wording a customer accepted, even after you edit it. CCI Consent History extends PrestaShop's Official GDPR Compliance module (`psgdpr`) with the exact text, language, version and acceptance time. Earlier records remain unchanged. After the account privacy wording changes, the module asks the customer to accept the new version.
 
-The package keeps its product name in English. Polish back-office translations are included, so a Polish employee can use the module without changing the module name.
+Customers can review their own records in **My account > Consent history**. Staff can search the history in the back office. English and Polish administration translations are included.
 
 Download the module ZIP from the [Cool Cat Ideas product page](https://coolcatideas.com/products/cci-consent-history/).
 

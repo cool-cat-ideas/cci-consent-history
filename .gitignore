@@ -36,3 +36,4 @@ scripts/quality/.php-cs-fixer.cache
 /playwright-report/
 /blob-report/
 /tmp-*
+/release/packages/

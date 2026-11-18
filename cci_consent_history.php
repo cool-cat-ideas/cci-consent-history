@@ -47,7 +47,7 @@ class Cci_Consent_History extends Module
         $this->bootstrap = true;
         $this->ps_versions_compliancy = [
             'min' => '9.0.0',
-            'max' => '9.2.0',
+            'max' => '9.2.999',
         ];
 
         parent::__construct();

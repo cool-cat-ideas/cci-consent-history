@@ -121,7 +121,7 @@ The back-office list keeps each acceptance with its customer, language, date and
 
 ## Compatibility
 
-- PrestaShop 9.0.0-9.2.0
+- PrestaShop 9.0 through 9.2, including patch releases
 - Official GDPR Compliance (`psgdpr`)
 - AFL-3.0
 
